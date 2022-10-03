@@ -68,9 +68,13 @@
                               <Component id="Tdate" alignment="0" pref="169" max="32767" attributes="0"/>
                               <Component id="Tage" alignment="0" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="Tname" alignment="0" pref="169" max="32767" attributes="0"/>
-                              <Component id="Tid" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="Tname" alignment="0" pref="169" max="32767" attributes="0"/>
+                                  <Component id="Tid" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                              <Component id="label" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Component id="Tmail" alignment="0" pref="169" max="32767" attributes="0"/>
@@ -104,6 +108,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Eid" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Tid" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="label" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -289,6 +294,11 @@
     <Component class="javax.swing.JTextField" name="Tname">
     </Component>
     <Component class="javax.swing.JTextField" name="Tid">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TidKeyPressed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TidKeyReleased"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TidKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="Tage">
     </Component>
@@ -426,6 +436,8 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Image"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="label">
     </Component>
   </SubComponents>
 </Form>

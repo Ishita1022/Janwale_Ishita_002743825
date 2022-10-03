@@ -71,6 +71,7 @@ public class Form extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         Etable = new javax.swing.JTable();
         ImageText = new javax.swing.JLabel();
+        label = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -148,6 +149,18 @@ public class Form extends javax.swing.JFrame {
         Email.setText("Email");
 
         Ecell.setText("Cell number");
+
+        Tid.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                TidKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TidKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TidKeyTyped(evt);
+            }
+        });
 
         Rfemale.setText("Female");
         Rfemale.addActionListener(new java.awt.event.ActionListener() {
@@ -228,9 +241,12 @@ public class Form extends javax.swing.JFrame {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(Tdate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
                                 .addComponent(Tage, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(Tname, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
-                                .addComponent(Tid, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(Tname, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                                    .addComponent(Tid, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addGap(110, 110, 110)
+                                .addComponent(label))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(Tmail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
                                 .addComponent(Tcell, javax.swing.GroupLayout.Alignment.LEADING)
@@ -254,7 +270,8 @@ public class Form extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Eid)
-                            .addComponent(Tid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Tid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(label))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Egender)
@@ -470,6 +487,27 @@ public class Form extends javax.swing.JFrame {
     
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void TidKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TidKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isLetter(c))
+        {
+        Tid.setEditable(false);
+        label.setText("Please enter number only");}
+        else
+        {
+        Tid.setEditable(true);}
+    }//GEN-LAST:event_TidKeyPressed
+
+    private void TidKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TidKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TidKeyReleased
+
+    private void TidKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TidKeyTyped
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_TidKeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -539,5 +577,6 @@ public class Form extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel label;
     // End of variables declaration//GEN-END:variables
 }
