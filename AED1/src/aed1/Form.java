@@ -70,7 +70,7 @@ public class Form extends javax.swing.JFrame {
         Tsearch = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         Etable = new javax.swing.JTable();
-        imagetxt = new javax.swing.JLabel();
+        ImageText = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -149,18 +149,19 @@ public class Form extends javax.swing.JFrame {
 
         Ecell.setText("Cell number");
 
-        Rfemale.setText("jRadioButton1");
+        Rfemale.setText("Female");
         Rfemale.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RfemaleActionPerformed(evt);
             }
         });
 
-        Rmale.setText("jRadioButton2");
+        Rmale.setText("Male");
 
-        Rother.setText("jRadioButton3");
+        Rother.setText("Other");
 
-        ESearch.setText("search");
+        ESearch.setText("Search");
+        ESearch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         Etable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -185,73 +186,61 @@ public class Form extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(Etable);
 
-        imagetxt.setText("jLabel1");
+        ImageText.setText("Image");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(127, 127, 127)
+                .addComponent(ESearch)
+                .addGap(87, 87, 87)
+                .addComponent(Tsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Tsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(4, 4, 4))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(imagetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Eid)
-                                    .addComponent(Ename)
-                                    .addComponent(Egender)
-                                    .addComponent(Eage)
-                                    .addComponent(Estartdate)
-                                    .addComponent(ETitle)
-                                    .addComponent(Ecell)
-                                    .addComponent(Email)
-                                    .addComponent(Elevel))))
-                        .addGap(166, 166, 166)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ImageText, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(160, 160, 160)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Eid)
+                            .addComponent(Ename)
+                            .addComponent(Egender)
+                            .addComponent(Eage)
+                            .addComponent(Estartdate)
+                            .addComponent(ETitle)
+                            .addComponent(Ecell)
+                            .addComponent(Email)
+                            .addComponent(ETeam)
+                            .addComponent(Elevel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(140, 140, 140)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Title)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Tdate, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Tmail, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Tlevel, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Tinfo, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Tage, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(Rmale)
-                                                .addGap(35, 35, 35)
-                                                .addComponent(Rother)
-                                                .addGap(37, 37, 37)
-                                                .addComponent(Rfemale))
-                                            .addComponent(Tid, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 223, Short.MAX_VALUE)))
-                                .addContainerGap(235, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Tname, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Tcell, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(Rmale)
+                                .addGap(18, 18, 18)
+                                .addComponent(Rfemale)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Rother))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(Tdate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                                .addComponent(Tage, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(Tname, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                                .addComponent(Tid, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(Tmail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                                .addComponent(Tcell, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Tlevel, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Tinfo, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Title, javax.swing.GroupLayout.Alignment.LEADING))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(187, 187, 187)
-                        .addComponent(ETeam)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 822, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addComponent(ESearch)
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(44, 44, 44)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 822, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(633, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -270,17 +259,17 @@ public class Form extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Egender)
                             .addComponent(Rfemale)
-                            .addComponent(Rother)
-                            .addComponent(Rmale))
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Rmale)
+                            .addComponent(Rother))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Eage)
                             .addComponent(Tage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Estartdate)
                             .addComponent(Tdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(12, 12, 12)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(ETitle)
                             .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -288,33 +277,29 @@ public class Form extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(ETeam)
                             .addComponent(Tinfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Elevel)
                             .addComponent(Tlevel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(Ecell))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(Tcell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(21, 21, 21)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Tmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Email))
-                        .addGap(51, 51, 51))
+                            .addComponent(Ecell)
+                            .addComponent(Tcell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Email)
+                            .addComponent(Tmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(69, 69, 69)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Tsearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ESearch)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(imagetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ESearch)
-                    .addComponent(Tsearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(59, 59, 59)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE)
+                        .addComponent(ImageText, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -431,7 +416,7 @@ public class Form extends javax.swing.JFrame {
 
     private void EtableKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_EtableKeyReleased
         // TODO add your handling code here:
-        
+
         DefaultTableModel table = (DefaultTableModel)Etable.getModel();
         String search = ESearch.getText();
         TableRowSorter<DefaultTableModel> tr = new TableRowSorter<DefaultTableModel>(table);
@@ -441,34 +426,31 @@ public class Form extends javax.swing.JFrame {
 
     private void EtableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EtableMouseClicked
         // TODO add your handling code here:
-        
+
         int i=Etable.getSelectedRow();
-            
-            Tname.setText(model.getValueAt(i, 0).toString());
-            Tid.setText(model.getValueAt(i, 1).toString());
-            Tage.setText(model.getValueAt(i, 2).toString());
-           if("Male".equals(model.getValueAt(i, 3))){
-                Rmale.setSelected(true);
-            }
-            else if("Female".equals(model.getValueAt(i, 3))){
-                Rfemale.setSelected(true);
-            } else{
-                Rother.setSelected(true);
-            }
-             
-            
-                
-           
-            Tdate.setText(model.getValueAt(i, 3).toString());
-            Tlevel.setText(model.getValueAt(i, 5).toString());
-            Title.setText(model.getValueAt(i, 6).toString());
-            Tinfo.setText(model.getValueAt(i, 7).toString());
-            Tcell.setText(model.getValueAt(i, 8).toString());
-            Tmail.setText(model.getValueAt(i, 9).toString());
+
+        Tname.setText(model.getValueAt(i, 0).toString());
+        Tid.setText(model.getValueAt(i, 1).toString());
+        Tage.setText(model.getValueAt(i, 2).toString());
+        if("Male".equals(model.getValueAt(i, 3))){
+            Rmale.setSelected(true);
+        }
+        else if("Female".equals(model.getValueAt(i, 3))){
+            Rfemale.setSelected(true);
+        } else{
+            Rother.setSelected(true);
+        }
+
+        Tdate.setText(model.getValueAt(i, 3).toString());
+        Tlevel.setText(model.getValueAt(i, 5).toString());
+        Title.setText(model.getValueAt(i, 6).toString());
+        Tinfo.setText(model.getValueAt(i, 7).toString());
+        Tcell.setText(model.getValueAt(i, 8).toString());
+        Tmail.setText(model.getValueAt(i, 9).toString());
     }//GEN-LAST:event_EtableMouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:JFileChooser browseImageFile = new JFileChooser();
         JFileChooser browseImageFile = new JFileChooser();
         FileNameExtensionFilter fnef = new FileNameExtensionFilter("IMAGES","png","jpg","jpeg");
         browseImageFile.addChoosableFileFilter(fnef);
@@ -481,10 +463,11 @@ public class Form extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, selectedImagePath);
         
      ImageIcon ii = new ImageIcon(selectedImagePath);
-     Image image = ii.getImage().getScaledInstance(imagetxt.getWidth(),imagetxt.getHeight(),Image.SCALE_SMOOTH);
+     Image image = ii.getImage().getScaledInstance(ImageText.getWidth(),ImageText.getHeight(),Image.SCALE_SMOOTH);
         
-      imagetxt.setIcon(new ImageIcon(image));
+      ImageText.setIcon(new ImageIcon(image));
     }
+    
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -535,6 +518,7 @@ public class Form extends javax.swing.JFrame {
     private javax.swing.JLabel Ename;
     private javax.swing.JLabel Estartdate;
     private javax.swing.JTable Etable;
+    private javax.swing.JLabel ImageText;
     private javax.swing.JRadioButton Rfemale;
     private javax.swing.JRadioButton Rmale;
     private javax.swing.JRadioButton Rother;
@@ -549,7 +533,6 @@ public class Form extends javax.swing.JFrame {
     private javax.swing.JTextField Tname;
     private javax.swing.JTextField Tsearch;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JLabel imagetxt;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

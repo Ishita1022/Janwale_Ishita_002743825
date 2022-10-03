@@ -28,83 +28,65 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="Tsearch" min="-2" pref="190" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="imagetxt" min="-2" pref="113" max="-2" attributes="0"/>
-                              <EmptySpace pref="58" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Eid" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Ename" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Egender" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Eage" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Estartdate" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ETitle" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Ecell" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Email" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Elevel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Title" alignment="0" max="32767" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="Tdate" min="-2" pref="157" max="-2" attributes="0"/>
-                                          <Component id="Tmail" min="-2" pref="135" max="-2" attributes="0"/>
-                                          <Component id="Tlevel" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                          <Component id="Tinfo" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
-                                          <Component id="Tage" alignment="0" min="-2" pref="148" max="-2" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="Rmale" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                              <Component id="Rother" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                              <Component id="Rfemale" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Component id="Tid" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="0" pref="223" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace pref="235" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Tname" min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="Tcell" min="-2" pref="184" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
-                      <Component id="ETeam" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
+              <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
+              <Component id="ESearch" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+              <Component id="Tsearch" min="-2" pref="190" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="822" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-              <Component id="ESearch" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="ImageText" min="-2" pref="109" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Eid" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Ename" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Egender" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Eage" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Estartdate" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="ETitle" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Ecell" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Email" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="ETeam" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="Elevel" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Rmale" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="Rfemale" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="Rother" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="Tdate" alignment="0" pref="169" max="32767" attributes="0"/>
+                              <Component id="Tage" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="Tname" alignment="0" pref="169" max="32767" attributes="0"/>
+                              <Component id="Tid" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="Tmail" alignment="0" pref="169" max="32767" attributes="0"/>
+                              <Component id="Tcell" alignment="0" max="32767" attributes="0"/>
+                              <Component id="Tlevel" alignment="0" max="32767" attributes="0"/>
+                              <Component id="Tinfo" alignment="0" max="32767" attributes="0"/>
+                              <Component id="Title" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="822" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="633" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -112,7 +94,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Ename" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -127,20 +109,20 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Egender" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="Rfemale" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="Rother" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Rmale" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Rother" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="Eage" min="-2" max="-2" attributes="0"/>
-                          <Component id="Tage" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Eage" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tage" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Estartdate" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Tdate" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="ETitle" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Title" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -150,42 +132,36 @@
                           <Component id="ETeam" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Tinfo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="13" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Elevel" min="-2" max="-2" attributes="0"/>
-                          <Component id="Tlevel" min="-2" pref="23" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="Ecell" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="Tcell" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Tmail" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Email" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Elevel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tlevel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Ecell" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tcell" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Email" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Tsearch" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ESearch" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="imagetxt" min="-2" pref="124" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="ImageText" min="-2" pref="115" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ESearch" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Tsearch" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="402" max="32767" attributes="0"/>
+              <EmptySpace pref="79" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="379" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -330,7 +306,7 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="Rfemale">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jRadioButton1"/>
+        <Property name="text" type="java.lang.String" value="Female"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RfemaleActionPerformed"/>
@@ -338,17 +314,22 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="Rmale">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jRadioButton2"/>
+        <Property name="text" type="java.lang.String" value="Male"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="Rother">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jRadioButton3"/>
+        <Property name="text" type="java.lang.String" value="Other"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="ESearch">
       <Properties>
-        <Property name="text" type="java.lang.String" value="search"/>
+        <Property name="text" type="java.lang.String" value="Search"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2"/>
+          </Border>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="Tsearch">
@@ -441,9 +422,9 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="imagetxt">
+    <Component class="javax.swing.JLabel" name="ImageText">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel1"/>
+        <Property name="text" type="java.lang.String" value="Image"/>
       </Properties>
     </Component>
   </SubComponents>
