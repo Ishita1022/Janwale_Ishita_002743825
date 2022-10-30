@@ -6,36 +6,55 @@ package model;
 
 /**
  *
- * @author Atharva
+ * @author ishita
  */
-public class House extends Community{
+public class House {
+    private String houseId;
+    private String streetAddress;
+    private Community community;
+    private String pinCode;
 
-    public String zipcode;
-    public String address;
-
-    public String validateAddress(String address) {
-        String isValid = "";
-        if (address.equals("")) {
-            isValid = "Address cannot be empty! \n";
-        } else if (address.length() < 10 || address.length() > 100) {
-            isValid = "Address must be atleast 10 characters and maximum 100 characters long! \n";
-        } else if (!address.matches("[a-zA-Z0-9'\\.\\-\\s\\,]{10,100}")) {
-            isValid = "Invalid Address Field! \n";
-        } else if (address.equals("Enter here")) {
-            isValid = "Invalid Name \n";
-        }
-        return isValid;
+    public String getHouseId() {
+        return houseId;
+    }
+    
+    
+    
+    public String getStreetAddress() {
+        return streetAddress;
     }
 
-    public String validateZipCode(String zipCode) {
-        String isValid = "";
-        if (zipCode.equals("")) {
-            isValid = "ZipCode cannot be empty! \n";
-        } else if (!zipCode.matches("^\\d{5}(?:[-\\s]\\d{4})?$")) {
-            isValid = "Invalid Zip Code Field! \n";
-        } else if (zipCode.equals("Enter here")) {
-            isValid = "Invalid Name \n";
-        }
-        return isValid;
+    public Community getCommunity() {
+        return community;
     }
+
+    public String getPinCode() {
+        return pinCode;
+    }
+
+    public void setHouseId(String houseId) {
+        this.houseId = houseId;
+    }
+
+    
+
+    public void setStreetAddress(String streetAddress) {
+        this.streetAddress = streetAddress;
+    }
+
+    public void setCommunity(Community community) {
+        this.community = community;
+    }
+
+    public void setPinCode(String pinCode) {
+        this.pinCode = pinCode;
+    }
+
+    
+    @Override
+    public String toString() {
+        return this.streetAddress;
+    }
+    
+    
 }

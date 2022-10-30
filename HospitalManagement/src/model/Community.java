@@ -4,37 +4,90 @@
  */
 package model;
 
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
- * @author Atharva
+ * @author ishita
  */
-public class Community extends City {
-    public String communityName;
-    public Date createdAt;
+public class Community {
+    private String communityId;
+    private String CommunityName;
+    private City city;
+    private List<House> houseList;
+    
+    public Community(){
+       houseList = new ArrayList<>();
+       addCommunities();
+       
+    }
 
-    public String validateCommunityName(String name) {
-        String isValid = "";
-        if (name.equals("")) {
-            isValid = "Community Name cannot be empty! \n";
-        } else if (name.length() < 2 || name.length() > 30) {
-            isValid = "Community Name must be atleast 2 characters and maximum 30 characters long! \n";
-        } else if (!name.matches("[a-zA-Z ]{2,30}")) {
-            isValid = "Invalid Community Name Field! \n";
-        }else if (name.equals("Enter here")) {
-            isValid = "Invalid Name \n";
-        }
-        return isValid;
+    public String getCommunityId() {
+        return communityId;
     }
     
-    public Boolean alreadtExists(String city, String community) {
-        Boolean found = false;
-        for (int i = 0; i < City.allCities.size(); i++) {
-            if (city.equals(City.allCities.get(i).city) && community.equals(City.allCities.get(i).communityName)) {
-                found = true;
+    
+    public String getCommunityName() {
+        return CommunityName;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public List<House> getHouseList() {
+        return houseList;
+    }
+
+    public void setCommunityId(String communityId) {
+        this.communityId = communityId;
+    }
+    
+
+    public void setCommunityName(String CommunityName) {
+        this.CommunityName = CommunityName;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    public void setHouseList(List<House> houseList) {
+        this.houseList = houseList;
+    }
+    
+    @Override
+    public String toString() {
+        return this.CommunityName;
+    }
+
+    public House addHouse() {
+        
+        House h = new House();
+        houseList.add(h);
+        return h;
+    }
+
+    public House getHouse(String text) {
+        House h = new House();
+        for(House house : houseList){
+            if(house.getHouseId().equals(text)){
+                h = house;
+                break;
             }
         }
-        return found;
+        return h;
     }
+
+    private void addCommunities() {
+        
+    }
+
+    
+    
+    
+    
+    
+    
 }

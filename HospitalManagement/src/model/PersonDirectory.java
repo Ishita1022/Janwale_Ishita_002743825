@@ -8,8 +8,18 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Atharva
+ * @author ishita
  */
 public class PersonDirectory {
-    public static ArrayList<Person> allPeople = new ArrayList<>();
+    private ArrayList<Person> personDirectory;
+
+    public ArrayList<Person> getPersonDirectory() {
+        return personDirectory;
+    }
+
+    public void setPersonDirectory(ArrayList<Person> personDirectory) {
+        this.personDirectory = personDirectory;
+    }
+    
+    
 }
