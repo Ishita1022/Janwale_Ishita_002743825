@@ -41,7 +41,7 @@ public class Encounters extends javax.swing.JFrame {
         ebp = new javax.swing.JTextField();
         etemp = new javax.swing.JTextField();
         epr = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -77,7 +77,7 @@ public class Encounters extends javax.swing.JFrame {
         eid4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         eid4.setText("Pulse Rate");
 
-        jLabel4.setText("DOB");
+        jButton1.setText("Submit");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,11 +106,12 @@ public class Encounters extends javax.swing.JFrame {
                             .addComponent(ename)
                             .addComponent(ebp, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(etemp)
-                            .addComponent(epr)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(262, 262, 262)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(epr))))
                 .addContainerGap(37, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(339, 339, 339))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,9 +151,9 @@ public class Encounters extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(eid4, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
                     .addComponent(epr, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4)
-                .addGap(385, 385, 385))
+                .addGap(34, 34, 34)
+                .addComponent(jButton1)
+                .addGap(363, 363, 363))
         );
 
         pack();
@@ -206,9 +207,9 @@ public class Encounters extends javax.swing.JFrame {
     private javax.swing.JTextField epid;
     private javax.swing.JTextField epr;
     private javax.swing.JTextField etemp;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
