@@ -1,3 +1,3 @@
 # Janwale_Ishita_002743825
 
-Setting up git
+The Java swing application is designed to build a healthcare system wherein mutiple actors come in picture. The application allows the creation of a user, a doctor, a patient, etc. It manages the visit of a patient to a doctor's place, by recording the encounter with the vital signs as observed by the doctor. The system has different roles based on the usage. A system admin can perform all the CRUD operations and has access to all models. There are 5 different roles assigned based on the usage accessibility, i.e doctor, patient, system admin, community admin and hospital admin. Different directories store the data entered. The patients and doctors can be filtered out based on a community which has city as an attribute. CRUD operations can be performed wherever applicable.
